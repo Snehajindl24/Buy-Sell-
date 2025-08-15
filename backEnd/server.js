@@ -17,7 +17,7 @@ const path = require("path");
 
 const JWT_SECRET = "Sherif007";
 const TOKEN_EXPIRY = "7d";
-const MONGO_URI = "mongodb+srv://snehajindal24:vb5pMPDUbSgqDQAd@buysell-cluster.pn2txqj.mongodb.net/?retryWrites=true&w=majority&appName=buysell-cluster";
+const MONGO_URI = "write your mongoDB";
 const genAI = new GoogleGenerativeAI("AIzaSyC2UwxKRuO1jKuT1ocBPK-EEU200J_x2sY");
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
