@@ -1,0 +1,61 @@
+/*
+ * ===========================================================================
+ * Sell.css - Sell Item Page Styles
+ * ===========================================================================
+ * The sell page form is now more visually appealing with better spacing,
+ * a clean layout, and modern input field styling.
+ */
+
+.sell-page {
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.sell-container {
+  width: 100%;
+  max-width: 700px;
+  background: var(--surface-color-light);
+  padding: 2.5rem;
+  border-radius: var(--border-radius-card);
+  box-shadow: var(--box-shadow-card);
+  animation: fadeIn 0.8s ease-out;
+}
+
+body.dark-mode .sell-container {
+  background: var(--surface-color-dark);
+}
+
+.sell-header {
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+body.dark-mode .sell-header {
+  color: var(--text-color-dark);
+}
+
+.sell-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sell-form .form-group label {
+  font-weight: 600;
+  color: var(--text-color-light);
+}
+
+body.dark-mode .sell-form .form-group label {
+  color: var(--text-color-dark);
+}
+
+.submit-button {
+  width: 100%;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  padding: 15px;
+}

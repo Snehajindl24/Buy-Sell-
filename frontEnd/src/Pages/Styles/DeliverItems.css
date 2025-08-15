@@ -1,0 +1,97 @@
+/*
+ * ===========================================================================
+ * DeliverItems.css - Delivery and Order Fulfillment Page Styles
+ * ===========================================================================
+ * This file styles the page for delivery personnel to manage and verify
+ * orders for delivery.
+ */
+
+.delivery-page {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  max-width: 800px;
+  margin: 20px auto;
+  animation: fadeIn var(--transition-speed) ease-out;
+}
+
+.delivery-order {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-md);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  background-color: var(--background-light);
+}
+
+.delivery-order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.delivery-order-header h3 {
+  margin: 0;
+}
+
+.delivery-item {
+  margin-bottom: 0.5rem;
+  color: var(--text-secondary);
+}
+
+.otp-verification {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.otp-verification input {
+  flex: 1;
+}
+
+.otp-verification button {
+  background-color: #27ae60;
+}
+
+.otp-verification button:hover {
+  background-color: #219653;
+}
+
+.order-status {
+  font-weight: 600;
+  color: #3498db;
+  margin-top: 1rem;
+}
+
+.delivered {
+  color: #27ae60;
+}
+
+.pending {
+  color: #f39c12;
+}
+
+.order-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.order-actions button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: var(--border-radius-md);
+  cursor: pointer;
+  transition: background-color var(--transition-speed);
+}
+.order-actions button:hover {
+  background-color: var(--secondary-color);
+  color: white;
+}
+.order-actions button.cancel {
+  background-color: #e74c3c;
+  color: white;
+}
+.order-actions button.cancel:hover {
+  background-color: #c0392b;
+} 

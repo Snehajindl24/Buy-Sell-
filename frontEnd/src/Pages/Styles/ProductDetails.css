@@ -1,0 +1,65 @@
+/*
+ * ===========================================================================
+ * ProductDetails.css - Product Details Page Styles
+ * ===========================================================================
+ * The product details page is now focused and clean, with a prominent product image
+ * and a clear call-to-action button.
+ */
+
+.product-details-page {
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.product-details-container {
+  width: 100%;
+  max-width: 800px;
+  background: var(--surface-color-light);
+  padding: 2.5rem;
+  border-radius: var(--border-radius-card);
+  box-shadow: var(--box-shadow-card);
+  animation: fadeIn 0.8s ease-out;
+}
+
+body.dark-mode .product-details-container {
+  background: var(--surface-color-dark);
+}
+
+.product-image {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: var(--border-radius-card);
+  margin-bottom: 2rem;
+}
+
+.product-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.product-price {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  margin-bottom: 1.5rem;
+}
+
+.product-description {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-secondary-light);
+  margin-bottom: 2rem;
+}
+
+body.dark-mode .product-description {
+  color: var(--text-secondary-dark);
+}
+
+.add-to-cart-button {
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 18px;
+}

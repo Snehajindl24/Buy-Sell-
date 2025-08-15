@@ -1,0 +1,116 @@
+/*
+ * ===========================================================================
+ * Login.css - Login/Register Form Styles
+ * ===========================================================================
+ * The login page now features a subtle background and a modern, glassmorphism-inspired
+ * form container with a smooth animation on load.
+ */
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f0f2f5, #e3e7ed);
+  padding: 2rem;
+}
+
+body.dark-mode .login-page {
+  background: linear-gradient(135deg, #121212, #2c2c2c);
+}
+
+.login-container {
+  width: 100%;
+  max-width: 450px;
+}
+
+.form-container {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  animation: fadeIn 0.8s ease-out;
+}
+
+body.dark-mode .form-container {
+  background: rgba(30, 30, 30, 0.8);
+  border: 1px solid rgba(30, 30, 30, 0.2);
+}
+
+.form-container h1 {
+  text-align: center;
+  font-size: 2.25rem;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+body.dark-mode .form-container h1 {
+  color: var(--text-color-dark);
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.input-group label {
+  font-weight: 600;
+  color: var(--text-color-light);
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+body.dark-mode .input-group label {
+  color: var(--text-color-dark);
+}
+
+.form-container input {
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 12px;
+  border-radius: 8px;
+  transition: all var(--transition-speed) ease;
+}
+
+body.dark-mode .form-container input {
+  background: rgba(30, 30, 30, 0.6);
+  border: 1px solid rgba(30, 30, 30, 0.3);
+}
+
+.form-container input:focus {
+  background: #fff;
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 0 3px rgba(37, 117, 252, 0.2);
+}
+
+body.dark-mode .form-container input:focus {
+  background: #1e1e1e;
+}
+
+.login-button {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.switch-form-text {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary-light);
+}
+
+body.dark-mode .switch-form-text {
+  color: var(--text-secondary-dark);
+}
+
+.switch-form-text a {
+  font-weight: 600;
+  color: var(--primary-color);
+  text-decoration: none;
+}
